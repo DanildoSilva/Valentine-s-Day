@@ -58,24 +58,16 @@
             height: 100%;
             animation: heartbeat 1s infinite alternate;
         }
-        .heart-shape::before,
-        .heart-shape::after {
+        .heart-shape {
             content: "";
             position: absolute;
-            width: 100px;
-            height: 160px;
+            width: 200px;
+            height: 200px;
             background: url('foto.jpg') no-repeat center/cover;
-            border-radius: 50%;
+            border-radius: 20%;
         }
-        .heart-shape::before {
-            left: 100px;
-            transform: rotate(-45deg);
-            transform-origin: right bottom;
-        }
-        .heart-shape::after {
-            right: 100px;
-            transform: rotate(45deg);
-            transform-origin: left bottom;
+        .heart-shape {
+            left: 30px;
         }
 
         @keyframes drawHeart {
